@@ -1,0 +1,4 @@
+# Upload only the built site and its Vercel config.
+/*
+!/dist
+!/vercel.json
