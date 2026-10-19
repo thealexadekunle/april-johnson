@@ -497,3 +497,36 @@ body{font-size:15.5px}
 .cs-photo{margin:0}.cs-photo img{object-position:50% 26%}
 @media(max-width:900px){.commitment-grid{gap:6%}.commitment-steps li{gap:14px}.commitment-intro{top:100px}}
 @media(max-width:650px){.commitment-grid{grid-template-columns:1fr;gap:44px}.commitment-intro{position:static}.commitment-intro h2{font-size:48px}.commitment-intro>p{max-width:none}.commitment-steps li{grid-template-columns:30px 1fr;padding:24px 0}.commitment-steps h3{font-size:25px}.commitment-actions .btn{white-space:normal}.cs-photo img{object-position:50% 22%}}
+
+/* listings from Lofty */
+.listings.sold{background:var(--ivory)}
+.lst-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:26px;margin-top:10px}
+.listings.active .lst-grid{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.lst{background:#fff;border:1px solid var(--line);display:flex;flex-direction:column;transition:transform .5s var(--ease),box-shadow .5s,border-color .5s}
+.lst:hover{transform:translateY(-6px);box-shadow:0 26px 50px rgba(17,14,8,.12);border-color:rgba(193,154,91,.55)}
+.lst-img{position:relative;display:block;aspect-ratio:4/3;overflow:hidden;background:var(--sand)}
+.lst-img img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.lst:hover .lst-img img{transform:scale(1.06)}
+.lst-badge{position:absolute;left:16px;top:16px;padding:7px 14px;background:var(--gold-grad);color:#1a1408;font:400 10.5px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase}
+.lst-badge.sold{background:var(--black);color:var(--gold-l)}
+.lst-badge.pending{background:#fff;color:var(--text)}
+.lst-body{padding:24px 24px 22px;display:flex;flex-direction:column;flex:1}
+.lst-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:10px}
+.lst-price{font:300 28px/1 var(--head);letter-spacing:.02em}
+.lst-date{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-d)}
+.lst h3{font-size:19px;margin:0 0 4px;letter-spacing:.03em}
+.lst-place{font-size:14px;color:var(--muted);margin:0 0 12px}
+.lst-facts{font-size:14px;color:var(--text);margin:0 0 18px}
+.lst-foot{margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;gap:12px;padding-top:16px;border-top:1px solid var(--line);font-size:11.5px;line-height:1.5;color:var(--muted)}
+.lst-ask{flex:none;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-d);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px}
+.lst-ask:hover{color:var(--text)}
+.lst-note{max-width:820px;margin:34px auto 0;text-align:center;font-size:12.5px;color:var(--muted)}
+.listings.inpage{margin:0 0 64px}
+.listings.inpage h2{margin-bottom:24px}
+.listings.inpage .lst-grid{grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.listings.inpage .lst-note{text-align:left;margin-left:0}
+@media(max-width:640px){.lst-grid{grid-template-columns:1fr}.lst-price{font-size:24px}}
+
+.lst-office{font-size:11.5px;color:var(--muted);margin:-8px 0 0}
+.lst-img{isolation:isolate}
+.lst-img:after{content:'';position:absolute;inset:0;z-index:-1;background:url('/assets/sig-gold.png') center/55% no-repeat,var(--black)}
