@@ -1,4 +1,5 @@
-# Upload only the built site and its Vercel config.
+# Upload only the built site, its serverless function and its Vercel config.
 /*
 !/dist
+!/api
 !/vercel.json
